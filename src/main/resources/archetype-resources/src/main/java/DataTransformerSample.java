@@ -6,7 +6,7 @@ import de.rwthaachen.openlap.visualizer.framework.DataTransformer;
 
 public class DataTransformerSample implements DataTransformer {
 
-    public TransformedData transformData(OLAPDataSet olapDataSet) {
+    public TransformedData<?> transformData(OLAPDataSet olapDataSet) {
         return new TransformedData();
     }
 }

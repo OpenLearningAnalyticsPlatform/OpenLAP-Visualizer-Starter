@@ -13,7 +13,7 @@ public class VisualizationCodeGeneratorSample extends VisualizationCodeGenerator
     }
 
     @Override
-    protected String visualizationCode(TransformedData transformedData) {
+    protected String visualizationCode(TransformedData<?> transformedData) {
         return "";
     }
 }
