@@ -28,12 +28,16 @@ be used in this document:
 In order to generate a starter project first clone this repository on your local system and then build the Archetype project with maven using the command `mvn install`.
 After building the project use the following command to generate the starter project :
 </br>
-`mvn archetype:generate -DarchetypeGroupId=de.rwthaachen.openlap -DarchetypeArtifactId=rwth-openlap-visualizer-framework-archetype -DarchetypeVersion=1.0 -DgroupId=de.rwthaachen.openlap -DartifactId=openlap-visualizer-framework-sample-combined -Dversion=1.0`
+```
+mvn archetype:generate 
+    -DarchetypeGroupId=de.rwthaachen.openlap -DarchetypeArtifactId=rwth-openlap-visualizer-framework-archetype -DarchetypeVersion=1.0 
+    -DgroupId=de.rwthaachen.openlap -DartifactId=openlap-visualizer-framework-sample-combined -Dversion=1.0
+```
 </br>
 The maven archetype command to generate the starter project takes parameters such as the `archetypeVersion` which should be adapted based on the archetype version you checked out. In addition, the command takes the `groupId`, `artifactId` and the `version` to be
 inserted as arguments in the pom.xml file of the generated project. </br>
-Once the generation is complete the project can imported as a Maven project into the IDE of your choosing. The generated project contains a sample implementation of the VisualizationCodeGenerator, the class which contains a concrete implementation of a VisualizationMethod. Furthermore,
-it also contains a sample DataTransformer class.
+Once the generation is complete the project can imported as a Maven project into the IDE of your choosing. The generated project contains a sample implementation of the `VisualizationCodeGenerator`, the class which contains a concrete implementation of a VisualizationMethod. Furthermore,
+it also contains a sample `DataTransformer` class.
 
 ### Further Information
 * "Maven Archetype ,  https://maven.apache.org/archetype/index.html"
