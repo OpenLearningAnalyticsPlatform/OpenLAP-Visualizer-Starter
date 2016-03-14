@@ -3,7 +3,7 @@
 ## Introduction
 
 This repository contains the Maven archetype project. This project can be used to generate a starter project to quick start
-development of a new Visualization Method along with its Data Transformer belonging to a Visualization Framework.
+development of a new `VisualizationMethod` along with its `DataTransformer` belonging to a `VisualizationFramework`.
 Before getting into the guide on how to generate a skeleton starter project let's list down the terminologies that will
 be used in this document:
 
@@ -23,7 +23,7 @@ be used in this document:
     <li> Git client </li>
 </ul>
 
-### Guide
+### Creating a starter project
 
 In order to generate a starter project first clone this repository on your local system and then build the Archetype project with maven using the command `mvn install`.
 After building the project use the following command to generate the starter project :
@@ -36,8 +36,7 @@ mvn archetype:generate
 </br>
 The maven archetype command to generate the starter project takes parameters such as the `archetypeVersion` which should be adapted based on the archetype version you checked out. In addition, the command takes the `groupId`, `artifactId` and the `version` to be
 inserted as arguments in the pom.xml file of the generated project. </br>
-Once the generation is complete the project can imported as a Maven project into the IDE of your choosing. The generated project contains a sample implementation of the `VisualizationCodeGenerator`, the class which contains a concrete implementation of a VisualizationMethod. Furthermore,
-it also contains a sample `DataTransformer` class.
+Once the generation is complete the project can imported as a Maven project into the IDE of your choosing. The generated project contains a sample implementation of the `VisualizationCodeGenerator`,the class which contains a concrete implementation of a `VisualizationMethod`. This sample class simply overrides the methods and does not provide an actual visualization code. Another sample class generated is that which implements the `DataTransformer` interface. The purpose of these sample classes is to show the developer which classes they need to provide concrete implementations for, in order to add a new visualization to the OpenLAP-Visualizer.
 
 ### Further Information
 * "Maven Archetype ,  https://maven.apache.org/archetype/index.html"
