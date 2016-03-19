@@ -3,7 +3,7 @@ package de.rwthaachen.openlap;
 import DataSet.OLAPDataSet;
 import de.rwthaachen.openlap.visualizer.framework.model.TransformedData;
 import de.rwthaachen.openlap.visualizer.framework.VisualizationCodeGenerator;
-
+import java.util.Map;
 /**
 * A sample class which serves as an example of a VisualizationCodeGenerator. 
 *
