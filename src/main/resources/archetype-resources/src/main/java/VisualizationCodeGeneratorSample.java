@@ -23,9 +23,10 @@ public class VisualizationCodeGeneratorSample extends VisualizationCodeGenerator
         this.setInput(new OLAPDataSet());
         this.setOutput(new OLAPDataSet());        
     }
-
-    @Override
-    protected String visualizationCode(TransformedData<?> transformedData) {
-        return "";
+ 	
+ 	@Override
+    protected String visualizationCode(TransformedData<?> transformedData, Map<String, Object> map) throws VisualizationCodeGenerationException {
+       return "";
     }
+    
 }
