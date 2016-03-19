@@ -25,7 +25,7 @@ public class VisualizationCodeGeneratorSample extends VisualizationCodeGenerator
     }
  	
  	@Override
-    protected String visualizationCode(TransformedData<?> transformedData, Map<String, Object> map) throws VisualizationCodeGenerationException {
+    protected String visualizationCode(TransformedData<?> transformedData, Map<String, Object> additionalParams) throws VisualizationCodeGenerationException {
        return "";
     }
     
